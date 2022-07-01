@@ -1,5 +1,8 @@
 import java.util.*;
 public class arrayRotation {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         // YOUR CODE GOES HERE
         // Please take input and print output to standard input/output (stdin/stdout)
@@ -22,8 +25,10 @@ public class arrayRotation {
         reverse(A,0,B-1);
         reverse(A,B,N-1);
         System.out.println("Rotated array is: ");
-        for(int i=0;i<N;i++)
-        System.out.print(A[i]+" ");
+        /*for(int i=0;i<N;i++)
+        System.out.print(A[i]+" ");*/
+        for(int i : A)
+        System.out.print(i+" ");
         sc.close();
     }
     public static void reverse(int[] arr, int start, int end)
